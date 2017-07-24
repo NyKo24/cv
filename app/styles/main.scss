@@ -1,0 +1,165 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+h1 {
+  margin: 0;
+}
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+header {
+  position: relative;
+  height: 95px;
+  .logo {
+    position: absolute;
+    left: 0;
+    max-width: 20%;
+    display: inline-block;
+    img {
+      content: url("http://lorempixel.com/output/fashion-q-c-95-95-9.jpg");
+      border-radius: 50%;
+    }
+  }
+  .menu {
+    display: inline-block;
+    position: absolute;
+    right:0;
+    font-size: 10px;
+    line-height: 95px;
+    height: 100%;
+    ul {
+      margin-bottom: 0;
+    }
+    li {
+      list-style: none;
+      display: inline-block;
+      padding-left: 15px;
+      padding-right: 15px;
+      a {
+        color: #8d8f92;
+      }
+      a:hover {
+        color: #00b3ee;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+    text-align: right;
+  }
+
+}
+
+.separator {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height:1px;
+  width:100%;
+  border-bottom: 1px dashed #8d8f92;
+}
+
+.me {
+  position: relative;
+  .me_img {
+    width: 35%;
+    height: auto;
+    display: inline-block;
+  }
+  .me_description {
+    float: right;
+    width: 65%;
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    .me_description_title {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  }
+}
